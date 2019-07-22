@@ -2,35 +2,133 @@
 <html>
 <head>
     <title>Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+    <style>
+        html {
+            font-size: 1.5rem;
+        }
 
+        body {
+            background: silver;
+            font-weight: 400;
+            line-height: 1.4;
+            background-image: linear-gradient(40deg, #89ebe2 20%, #ff6a00 80%);
+        }
+        /* nav */
+        nav {
+            background-image: linear-gradient(20deg, #b94e4e 20%, #bb0d18 80%);
+        }
+        .nav-link::selection{
+            color:yellow;
+        }
 
+        /* nav ends */
+
+        /*Welcome section*/
+
+        #welcome-section {
+            height: 100vh;
+            background: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
+        /*Welcome section ends*/
+
+        /*About section start*/
+        /*about section end*/
+
+        /*project start*/
+        #projects{
+            padding-top:80px;
+            background:lightgreen;
+            min-height:80vh;
+        }
+        /*project end*/
+
+        /*contact start*/
+        #contact{
+            min-height:60vh;
+        }
+        /*contact end*/
+
+        /*footer start*/
+        footer{
+            background:lightblue;
+            text-align:center;
+        }
+        span{
+            text-align:center;
+        }
+        /*footer end*/
+    </style>
 </head>
 <body>
-    <nav id="navbar" class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
-        <i class="navbar-brand">Anjani</i>
-        <ul class="navbar nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#welcome-section">Welcome</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#projects">Projects</a>
-            </li>
-        </ul>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!--Navbar Starts-->
+    <nav id="navbar" class="navbar navbar-expand-md navbar-dark bg-info fixed-top">
+        <span class="navbar-brand">AnjAni</span>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navDiv justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#welcome-section">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
+    <!--Navbar ends-->
+    <!-- Welcome Section start-->
     <section id="welcome-section">
-        <!--10. height=viewport-->
         <h1>I'm Anjani</h1>
+        <p>a Developer</p>
     </section>
-    <div>
-        <section id="projects">
-            <div class="project-title">
-                <a href="#">Check out this link to my Project</a>
-            </div>
-        </section>
-    </div>
-    <div class="footer">
-        profile-link: <a href="#">Github</a>
-    </div>
+    <!-- Welcome Section end-->
+    <!-- About Section start-->
+    <!-- About Section end-->
+    <!-- project Section start-->
+    <section id="projects">
+        <h2 id="project-title">Here are some of my Projects..</h2>
+        <div class="project-grid">
+            <a href="../../projects/TributePage.html" target="_blank" class="project project-tile">
+                <img class="project-image" src="#" alt="">
+                <p id="project-title">
+                    <span>A Tribute Page</span>
+                </p>
+            </a>
+        </div>
+        <a href="#">
+            Show All
+        </a>
+    </section>
+    <!-- project Section end-->
+    <!-- contact Section start-->
+    <section id="contact">
+        <div id="contact-section-header">
+            <h2>Message me at</h2>
+        </div>
+        <div class="contact-links">
+            <a href="https://facebook.com/freecodecamp"
+               target="_blank"
+               class="btn contact-details"><i class="fab fa-facebook-square"></i>Facebook</a>
+        </div>
+    </section>
+    <!-- contact Section end-->
+    <!-- footer start-->
+    <footer >
+        Anjani Portfolio
+    </footer>
+    <!-- footer end-->
+
 </body>
 </html>
