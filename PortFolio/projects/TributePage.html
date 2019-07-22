@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <style>
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            text-align: center;
+            margin: 0;
+        }
+
+        #image {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin:0 auto;
+        }
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 0;
+        }
+
+        @media (max-width:460px) {
+            h1 {
+                font-size: 3.5rem;
+                line-height: 1.2;
+            }
+        }
+
+        h2 {
+            font-size: 3.2rem;
+        }
+
+        a {
+            color: mediumblue;
+        }
+
+            a:hover {
+                color: darkblue;
+            }
+
+            a:visited {
+                color: #74638f;
+            }
+
+        #main {
+            margin: 30px 8px;
+            padding: 15px;
+            border-radius:5px;
+            background:#eee;
+            color:#604ca0;
+        }
+        @media(max-width:460px){
+            #main{
+                margin:0;
+            }
+        }
+        #img-div{
+            background:white;
+            padding:10px;
+            margin:0;
+        }
+        #img-caption{
+            margin: 15px 0 5px 0;
+        }
+        @media(max-width:460px){
+            #img-caption{
+                font-size:1.4rem;
+            }
+        }
+        #heading{
+            margin:50px 0;
+            text-align:center;
+        }
+        blockquote{
+            font-style:italic;
+            max-width:545px;
+            margin:0 auto 50px auto;
+            text-align:left;
+        }
+        article{
+            max-width:700px;
+            margin: 0 auto 50px auto;
+            text-align:justify;
+            line-height:1.6;
+        }
+        p{
+            font-size:1.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!--color: #604ca0;-->
+    <main id="main">
+        <header id="title">
+            <h1 id="heading">Ashish Sharma</h1>
+            <p id="sub-heading">Who walked 17000km to spread awareness against Child Begging</p>
+        </header>
+        <figure id="img-div">
+            <img id="image" src="https://images.assettype.com/thequint/2017-11/b14a271c-812c-47c2-a41f-5f7604d4c570/Untitled%20design.jpg" alt="Ashish on his way">
+            <figcaption id="img-caption">Ashish walking 17000Kms</figcaption>
+        </figure>
+        <section id="tribute-info">
+            <article>
+                <h2>
+                    One man. One mission.
+                </h2>
+                <p>
+                    This is the story of Ashish Sharma, a 29-year-old man from Delhi who works relentlessly with his Duayen Foundation
+                    to eradicate child begging from Indian society. His philosophy is that working on resolving this one issue can effectively
+                    put children in school and eliminate many associated problems such as child trafficking, child prostitution, child labouring,
+                    rag picking, drug mafia, amongst a slew of others.
+                </p>
+            </article>
+            <article>
+                <h2>A glimpse of the Unmukt India Campaign</h2>
+                <p>
+                    The Unmukt India Campaign entails a 17,000km walk to spread awareness about the issue of child begging spanning
+                    all 29 states, seven union territories and 4,900 villages. It had flagged off in August 2017 and took more than
+                    one and a half years to complete. The concept behind the walk was that I’d try to meet as many people as I could
+                    and try to create a psychological impact.
+                </p>
+            </article>
+            <article>
+                <h2>
+                    Why travering on foot ?
+                </h2>
+                <p>
+                    If we refer to Indian culture and history, we can see that it is defined by figures who travelled by foot to educate
+                    the population about their causes. Examples include Adi Sankaracharya, Swami Vivekananda, Guru Nanak, etc. Being a spiritual
+                    person myself, I believe in the learnings we can imbibe from such instances and the scriptures. This encouraged me to decide
+                    upon this method to spread awareness.
+                </p>
+            </article>
+            <article>
+                <h2>Funding for the Mission !!!</h2>
+                <p>
+                    The only source of funding was what was provided to me by two of my school friends. I live a very simple life, and I adhered
+                    to these principles during the walk also. I ate simple food, dressed modestly and did not indulge in any luxuries. Then there
+                    were those random acts of kindness by strangers who would offer me food alongside encouragement to keep going.
+                </p>
+                <p>
+                    The main reason why I did not consider raising funds before embarking on the mission was because I believe funds don’t matter
+                    if one is courageous enough to face whatever comes their way.
+                </p>
+            </article>
+            <blockquote cite="#">
+                <p>
+                    "People thought I had gone mad when I spoke to them about this. But through the walk, I wanted to bring a physiological revolution
+                    by meeting all kinds of people"
+                </p>
+                <cite>--Ashish Sharma</cite>
+            </blockquote>
+
+            Know more about <a id="tribute-link" href="https://www.theweek.in/leisure/society/2019/04/29/man-who-walked-17000-km-across-india-to-end-child.html" target="_blank">Ashish Sharma</a>
+        </section>
+    </main>
+</body>
+</html>
