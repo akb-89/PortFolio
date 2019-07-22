@@ -12,6 +12,12 @@
             font-size: 1.5rem;
         }
 
+        @media(max-width:800px) {
+            html {
+                font-size: 1rem;
+            }
+        }
+
         body {
             background: silver;
             font-weight: 400;
@@ -22,8 +28,9 @@
         nav {
             background-image: linear-gradient(20deg, #b94e4e 20%, #bb0d18 80%);
         }
-        .nav-link::selection{
-            color:yellow;
+
+        .nav-link::selection {
+            color: yellow;
         }
 
         /* nav ends */
@@ -46,26 +53,59 @@
         /*about section end*/
 
         /*project start*/
-        #projects{
-            padding-top:80px;
-            background:lightgreen;
-            min-height:80vh;
+        #projects {
+            padding-top: 75px;
+            background: lightgreen;
+            min-height: 80vh;
+            text-align:center;
+        }
+
+        #project-header {
+            text-align: center;
+            color: crimson;
+        }
+
+        .project-grid {
+
+            background: white;
+            padding: 10px 15px 10px 15px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 3.5rem;
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+        }
+        .project-link{
+            background-color:cornsilk;
+            height:300px;
+        }
+        #showAllLink{
+
+            padding:20px 5px 0 5px;
+            background:silver;
+
+        }
+        #showAllLink:hover{
+            color:red;
         }
         /*project end*/
 
         /*contact start*/
-        #contact{
-            min-height:60vh;
+        #contact {
+            min-height: 60vh;
         }
         /*contact end*/
 
         /*footer start*/
-        footer{
-            background:lightblue;
-            text-align:center;
+        footer {
+            background: lightblue;
+            text-align: center;
         }
-        span{
-            text-align:center;
+
+        span {
+            text-align: center;
         }
         /*footer end*/
     </style>
@@ -98,18 +138,46 @@
     <!-- About Section end-->
     <!-- project Section start-->
     <section id="projects">
-        <h2 id="project-title">Here are some of my Projects..</h2>
+        <h2 id="project-header">Here are some of my Projects..</h2>
         <div class="project-grid">
-            <a href="../../projects/TributePage.html" target="_blank" class="project project-tile">
-                <img class="project-image" src="#" alt="">
-                <p id="project-title">
-                    <span>A Tribute Page</span>
-                </p>
+            <div class="project-link">
+                <a href="../../projects/TributePage.html" target="_blank">
+                    <img class="project-image" src="#" alt="">
+                    <p id="project-title">
+                        <span>A Tribute Page1</span>
+                    </p>
+                </a>
+            </div>
+            <div class="project-link">
+                <a href="../../projects/TributePage.html" target="_blank">
+                    <img class="project-image" src="#" alt="">
+                    <p id="project-title">
+                        <span>A Tribute Page2</span>
+                    </p>
+                </a>
+            </div>
+            <div class="project-link">
+                <a href="../../projects/TributePage.html" target="_blank">
+                    <img class="project-image" src="#" alt="">
+                    <p id="project-title">
+                        <span>A Tribute Page3</span>
+                    </p>
+                </a>
+            </div>
+            <div class="project-link">
+                <a href="../../projects/TributePage.html" target="_blank">
+                    <img class="project-image" src="#" alt="">
+                    <p id="project-title">
+                        <span>A Tribute Page4</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div >
+            <a href="#" id="showAllLink">
+                <span>Show All</span>
             </a>
         </div>
-        <a href="#">
-            Show All
-        </a>
     </section>
     <!-- project Section end-->
     <!-- contact Section start-->
@@ -118,14 +186,12 @@
             <h2>Message me at</h2>
         </div>
         <div class="contact-links">
-            <a href="https://facebook.com/freecodecamp"
-               target="_blank"
-               class="btn contact-details"><i class="fab fa-facebook-square"></i>Facebook</a>
+            <a href="https://github.com/akb-89" target="_blank" id="profile-link" class="contact-details">Github</a>
         </div>
     </section>
     <!-- contact Section end-->
     <!-- footer start-->
-    <footer >
+    <footer>
         Anjani Portfolio
     </footer>
     <!-- footer end-->
