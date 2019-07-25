@@ -83,8 +83,9 @@
         }
         #showAllLink{
 
-            padding:20px 5px 0 5px;
-            background:silver;
+            position: relative;
+            /*move this element 20px up*/
+            background: brown;
 
         }
         #showAllLink:hover{
@@ -94,7 +95,8 @@
 
         /*contact start*/
         #contact {
-            min-height: 60vh;
+            min-height: 40vh;
+            margin: 10vh 0px 0px 39vw;
         }
         /*contact end*/
 
@@ -152,7 +154,7 @@
                 <a href="../../projects/TributePage.html" target="_blank">
                     <img class="project-image" src="#" alt="">
                     <p id="project-title">
-                        <span>A Tribute Page2</span>
+                        <span>Survey Form</span>
                     </p>
                 </a>
             </div>
@@ -160,7 +162,7 @@
                 <a href="../../projects/TributePage.html" target="_blank">
                     <img class="project-image" src="#" alt="">
                     <p id="project-title">
-                        <span>A Tribute Page3</span>
+                        <span>Product landing page</span>
                     </p>
                 </a>
             </div>
@@ -168,7 +170,7 @@
                 <a href="../../projects/TributePage.html" target="_blank">
                     <img class="project-image" src="#" alt="">
                     <p id="project-title">
-                        <span>A Tribute Page4</span>
+                        <span>Technical documentation page</span>
                     </p>
                 </a>
             </div>
@@ -183,9 +185,14 @@
     <!-- contact Section start-->
     <section id="contact">
         <div id="contact-section-header">
-            <h2>Message me at</h2>
+            <h2>Contact me:</h2>
+        </div>
+        <div class="contact-body">
+            <input type="text" placeholder="Your name"><br/><br>
+            <input type="area" placeholder="Message...">
         </div>
         <div class="contact-links">
+            <span>You can also find me at : </span>
             <a href="https://github.com/akb-89" target="_blank" id="profile-link" class="contact-details">Github</a>
         </div>
     </section>
